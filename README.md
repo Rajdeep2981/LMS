@@ -6,7 +6,7 @@ This is a Library Management System based on a Node.js serving frontend views us
 
 1. Clone the repository into your local machine using the command:
    ```bash
-   git clone git@github.com:LunaticFrisbee/Lib-Manager.git
+   git clone git@github.com:Rajdeep2981/Lib-Manager.git
    cd Lib-Manager
    ```
 2. If you have docker-compose installed, perform the following command:
