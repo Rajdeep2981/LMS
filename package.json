@@ -1,0 +1,32 @@
+{
+  "name": "lib-manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LunaticFrisbee/Lib-Manager.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LunaticFrisbee/Lib-Manager/issues"
+  },
+  "homepage": "https://github.com/LunaticFrisbee/Lib-Manager#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "mysql2": "^3.3.2",
+    "nodemon": "^2.0.16"
+  }
+}

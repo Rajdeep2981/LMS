@@ -1,0 +1,17 @@
+{{#each data}}
+
+<tr>
+    <td>{{this.isbn}}</td>
+    <td>{{this.book}}</td>
+    <td>{{this.enrollmentNo}}</td>
+    {{!-- <td><button onclick="approveFn({{this.isbn}}, {{this.book}}, {{this.enrollmentNo}})">Approve</button></td>
+    <td><button onclick="denyFn({{this.isbn}}, {{this.book}}, {{this.enrollmentNo}})">Deny</button></td> --}}
+      <td><button
+            onclick="approveFn({{this.isbn}},{{this.book}},{{this.enrollmentNo}})"
+          >Approve</button></td>
+                <td><button
+            onclick="denyFn({{this.isbn}},{{this.book}},{{this.enrollmentNo}})"
+          >Deny</button></td>
+
+</tr>
+{{/each}}

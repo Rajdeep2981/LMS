@@ -1,0 +1,10 @@
+{{#each data}}
+
+<tr>
+
+    <td>{{this.isbn}}</td>
+    <td>{{this.title}}</td>
+    <td><button id="checkin-button" onclick="checkinFn({{this.isbn}})">Check In</button></td>
+</tr>
+
+{{/each}}

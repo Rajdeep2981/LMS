@@ -1,0 +1,14 @@
+{{#each data}}
+
+  <tr>
+
+    <td>{{this.isbn}}</td>
+    <td>{{this.title}}</td>
+    <td>{{this.quantity}}</td>
+    <form action="" method="">
+    <td><input type="number" id="quantity" placeholder="Quantity"/></td>
+    <td><button onclick="removeFn({{this.isbn}})">Remove</button></td>
+    </form>
+  </tr>
+
+{{/each}}

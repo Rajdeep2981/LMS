@@ -1,0 +1,28 @@
+version: '3'
+services:
+  mysqldb:
+    image: mysql:8.0.33
+    restart: always
+    env_file:
+      - ./.env
+    ports:
+      - 3308:3306
+    networks:
+      - my-network
+
+  node-lms:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 5000:5000
+    depends_on:
+      - mysqldb
+    networks:
+      - my-network
+    stdin_open: true
+    tty: true
+
+networks:
+  my-network:

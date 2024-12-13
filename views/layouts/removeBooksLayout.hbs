@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remove Books</title>
+  </head>
+  <body>
+    <button onclick="window.location='/admin/admin-dashboard';">Back</button>
+    <br><br>
+    <table>
+      <tr>
+        <th style="padding: 4px">ISBN</th>
+        <th style="padding: 4px">Book Name</th>
+        <th style="padding: 4px">Copies Available</th>
+        <th style="padding: 4px">Quantity to Remove</th>
+        <th style="padding: 4px"></th>
+      </tr>
+
+      {{{body}}}
+
+    </table>
+    <br />
+    <button class="logout-btn" onclick="window.location='/logout'">
+      Logout
+    </button>
+  </body>
+  <script src="/scripts/checks.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</html>
